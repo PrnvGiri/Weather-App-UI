@@ -1,7 +1,8 @@
 # Weather App UI
 
 ![Weather App UI](https://user-images.githubusercontent.com/114610311/275415713-87e34608-a4ec-4c0a-be33-d3f6ed1bc0f5.jpg)
-
+## Demo
+[Demo link](https://prnvgiri.github.io/Weather-App-UI/)
 ## Introduction
 
 This is a simple and stylish Weather App UI created with HTML and CSS. It provides a clean and modern design to display weather information for a specific location. The UI is responsive and visually appealing.
