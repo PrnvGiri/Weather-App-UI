@@ -35,7 +35,7 @@ You can customize this Weather App UI by making changes to the CSS code. Here ar
 
 ## Preview
 
-![Weather App UI](preview.png)
+![Weather App UI](https://user-images.githubusercontent.com/114610311/275415713-87e34608-a4ec-4c0a-be33-d3f6ed1bc0f5.jpg)
 
 ## Author
 
