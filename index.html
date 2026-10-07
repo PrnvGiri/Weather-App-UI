@@ -15,19 +15,19 @@
         <div class="left-info">
             <div class="pic-gradient"></div>
             <div class="today-info">
-                <h2>Friday</h2>
-                <span>28 July 2023</span>
+                <h2 id="current-day">Loading...</h2>
+                <span id="current-date">Loading weather</span>
                 <div>
                     <i class='bx bx-current-location'></i>
-                    <span>Delhi, IN</span>
+                    <span id="current-location">—</span>
                 </div>
             </div>
             <div class="today-weather">
-                <i class='bx bx-sun'></i>
-                <h1 class="weather-temp">
-                    25°C
+                <i id="current-weather-icon" class='bx bx-cloud'></i>
+                <h1 id="current-temperature" class="weather-temp">
+                    —
                 </h1>
-                <h3>Sunny</h3>
+                <h3 id="current-condition">Loading...</h3>
             </div>
         </div>
 
@@ -35,49 +35,33 @@
             <div class="day-info">
                 <div>
                     <span class="title">PRECIPITATION</span>
-                    <span class="value">4 %</span>
+                    <span id="precipitation" class="value">—</span>
                 </div>
                 <div>
                     <span class="title">HUMIDITY</span>
-                    <span class="value">34 %</span>
+                    <span id="humidity" class="value">—</span>
                 </div>
                 <div>
                     <span class="title">WIND SPEED</span>
-                    <span class="value">6 km/h</span>
+                    <span id="wind-speed" class="value">—</span>
                 </div>
             </div>
 
-            <ul class="days-list">
-                <li>
-                    <i class='bx bx-cloud'></i>
-                    <span>Sat</span>
-                    <span class="day-temp">23°C</span>
-                </li>
-                <li>
-                    <i class='bx bx-sun'></i>
-                    <span>Sun</span>
-                    <span class="day-temp">28°C</span>
-                </li>
-                <li>
-                    <i class='bx bx-cloud-rain'></i>
-                    <span>Mon</span>
-                    <span class="day-temp">02°C</span>
-                </li>
-                <li>
-                    <i class='bx bx-cloud-drizzle'></i>
-                    <span>Tue</span>
-                    <span class="day-temp">14°C</span>
-                </li>
-            </ul>
+            <ul id="forecast-list" class="days-list" aria-label="Four-day forecast"></ul>
 
-            <div class="btn-container">
-                <button class="loc-button">Search Location</button>
-            </div>
+            <form id="search-form" class="btn-container">
+                <label class="sr-only" for="city-search">City name</label>
+                <input id="city-search" class="city-search" type="search" placeholder="Search city" value="Delhi" required>
+                <button class="loc-button" type="submit">Search Location</button>
+            </form>
+            <p id="weather-status" class="weather-status" role="status" aria-live="polite"></p>
 
         </div>
 
     </div>
       
+    <script src="config.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
